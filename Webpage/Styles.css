@@ -1,0 +1,15 @@
+* {
+	font-family: Arial, helvetica, sans-serif;
+	margin: 0;
+	padding: 0px;
+}
+
+:root {
+	--gcback: #F2FAF4;
+	--white: #FFFFFF;
+	--gcligth: #98DCC3;
+    --gcdark:#006357;
+    --gcbrown:#BC7D4C;
+    --gcgreen:#A3D079;
+    --gctext: #0C151B;
+}
