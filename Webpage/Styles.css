@@ -35,9 +35,19 @@
     flex-shrink: 0;
 }
 
-.green-coding a {
+.green-coding a, .about-us a, .visit-our-github a {
 	text-decoration: none;
 	color: var(--gcdark);
+}
+
+.green-coding a:hover, .about-us a:hover, .visit-our-github a:hover {
+    color: var(--gcback);
+    transition: 0.1s;
+}
+
+i:hover {
+    color: var(--gcback);
+    transition: 0.1s;
 }
 
 .green-coding-wrapper {
@@ -55,9 +65,10 @@
     position: relative;
     background-color: #98dcc3;
     height: 7.5rem;
-    
     flex-shrink: 0;
 }
+
+
 .case-study-wrapper {
     position: absolute;
     top: calc(50% - 26px);
@@ -115,12 +126,21 @@
     align-items: flex-end;
     flex-shrink: 0;
 }
-.some-ikoner-icon {
-    width: 3rem;
-    position: relative;
-    height: 3rem;
-    padding-left: 2rem;
+
+.fa-github {
+    color: var(--gcdark);
 }
+
+
+i.fa {
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+
+.fa :hover {
+    color: var(--gcback);
+}
+
 .github-box {
     width: 51.75rem;
     display: flex;
@@ -189,6 +209,7 @@ hr.footer-line {
     font-size: 1rem;
     color: #006357;
     font-family: Roboto;
+
 }
 
 .footer-copyright {
