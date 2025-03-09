@@ -20,6 +20,10 @@
 	z-index: 1;
 }
 
+img { /*Alle bilder har 10% radius*/
+    border-radius: 10%;
+}
+
 .logo-icon { /* Kode for logo og at den holder seg til venstre. (Kode fra figma) pluss litt justeringer med padding og margin */
     width: 5rem;
     position: relative;
@@ -59,6 +63,34 @@
     color: var(--gcback);
 }
 
+
+.Textbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Juster etter behov */
+    gap: 2rem; 
+    padding: 1rem;
+}
+
+.textbox {
+    flex: 3; 
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.text-img {
+    flex: 1;
+    padding: 4rem;
+}
+
+div.contact-container {
+    background: var(--graaboindu);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 20% 5% 20%;
+  }
+    
 /* Kode for footer er hentet fra figma og endret, her skal det endres en del slik at det blir lettere å lese koden. Figma lager mye ekstra unødvendig kode */
 .about-us a, .visit-our-github a {
 	text-decoration: none;
@@ -151,12 +183,11 @@ hr.footer-line {
 
 .footer-container {
     width: 100%;
-    position: fixed;
     left: 0;
     bottom: 0;
     padding-top: 1rem;
     background-color: #98dcc3;
-    /*overflow: hidden;*/
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,14 +198,14 @@ hr.footer-line {
     font-size: 1rem;
     color: #006357;
     font-family: Roboto;
-
 }
 
 .footer-copyright {
     width: 100%;
     background-color: var(--gcback);
 	text-align: center;
-	padding: 1rem;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
 	color: black;
 }
 
