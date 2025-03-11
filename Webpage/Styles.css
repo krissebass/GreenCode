@@ -63,6 +63,10 @@ img { /*Alle bilder har 10% radius*/
     color: var(--gcback);
 }
 
+/* må legge inn bilder i Visual studio Code da det ikke fungerer i sublime på mac*/
+.Header-box {
+    background-image: ;
+}
 
 .Textbox-container {
     display: flex;
