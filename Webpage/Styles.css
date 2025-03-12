@@ -5,6 +5,10 @@
     line-height: 140%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root { /* Farger til nettsiden */
 	--gcback: #F2FAF4;
 	--white: #FFFFFF;
@@ -129,7 +133,6 @@ img { /*Alle bilder har 10% radius*/
     font-weight: 200;
 }
 
-/* må legge inn bilder i Visual studio Code da det ikke fungerer i sublime på mac*/
 .Header-box {
     background-image: ;
 }
@@ -155,6 +158,33 @@ img { /*Alle bilder har 10% radius*/
     height: 85%;
     border-radius: 100%;
     float: left;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 50%;
+    padding: 1rem;
+}
+.avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.avatar-box{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    text-align: center;
+}
+
+.avatar-line {
+    border: 1px solid var(--gcbrown);
+    border-radius: 5px;
+    width: 51.75rem;
+    margin: auto;
 }
 
 .Textbox-container {
