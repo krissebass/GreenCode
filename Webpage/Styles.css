@@ -2,6 +2,7 @@
 	font-family: Arial, helvetica, sans-serif;
 	margin: 0;
 	padding: 0px;
+    line-height: 140%;
 }
 
 :root { /* Farger til nettsiden */
@@ -85,13 +86,6 @@ img { /*Alle bilder har 10% radius*/
     border-radius: 10%;
 }
 
-
-
-.infoimage {
-    width: 100%;
-    height: 120%;
-}
-
 .logo-icon { /* Kode for logo og at den holder seg til venstre. (Kode fra figma) pluss litt justeringer med padding og margin */
     width: 5rem;
     position: relative;
@@ -140,22 +134,57 @@ img { /*Alle bilder har 10% radius*/
     background-image: ;
 }
 
+.inf-image {
+    width: 100%;
+}
+
+.text-img {
+    flex: 1;
+    padding: 1rem;
+}
+
+.profile-img {
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    float: right;
+}
+
+.profile-img2 {
+    width: 85%;
+    height: 85%;
+    border-radius: 100%;
+    float: left;
+}
+
 .Textbox-container {
     display: flex;
     align-items: center;
     justify-content: center; /* Juster etter behov */
     gap: 2rem; 
-    padding: 1rem;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.Textbox-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Juster etter behov */
+    gap: 2rem; 
+    background-color: var(--gcback);
 }
 
 .textbox {
     flex: 3; 
-    padding: 20px;
+    padding: 2rem;
+    max-width: 65ch;
+    margin-left: 96px;
+    margin-right: 96px;
 }
 
-.text-img {
-    flex: 1;
-    padding: 4rem;
+.textbox i:hover {
+    color: var(--gcbrown);
+    transition: 0.1s;
 }
 
 div.contact-container {
@@ -200,10 +229,6 @@ i:hover {
 i.fa {
     font-size: 3rem;
     padding-right: 1rem;
-}
-
-.fa :hover {
-    color: var(--gcback);
 }
 
 .github-box {
