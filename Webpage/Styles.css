@@ -16,8 +16,9 @@
 
 /*Krav til tekst
 brødtekst - regular - roboto - 16 punkt
-overskrift (H1) - bold - outfit - 64 punkt
-overskrift 2 (H2) - bold - putfit - 48 punkt
+Tittel (H1) - bold - outfit - 64 punkt
+Overskrift 1 (H2) - bold - outfit 48 punkt
+overskrift 2 (H3) - bold - putfit - 32 punkt
 */
 
 .stick-to-top { /* Menyen sitter fast på toppen */
@@ -26,8 +27,44 @@ overskrift 2 (H2) - bold - putfit - 48 punkt
 	z-index: 1;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    font-family: 'Outfit';
+    font-family: 'Inter';
+    }
+    p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    }
+    
+    h1 { 
+        font-size: 4em;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-size: 3em;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-family: 'Outfit', sans-serif; 
+        font-weight: 300;
+    }
+
+
+
 img { /*Alle bilder har 10% radius*/
     border-radius: 10%;
+}
+
+
+.infoimage {
+    width: 100%;
+    height: 120%;
 }
 
 .logo-icon { /* Kode for logo og at den holder seg til venstre. (Kode fra figma) pluss litt justeringer med padding og margin */
@@ -61,12 +98,16 @@ img { /*Alle bilder har 10% radius*/
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-family: Inter;
 }
   
 .navbar li a:hover { /* Meny-liste - hentet inspo og hjelp fra W3school. hovereffekt  */
     color: var(--gcback);
+}
+
+.navbar ul li a {
+    font-size: 1.5rem;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 200;
 }
 
 /* må legge inn bilder i Visual studio Code da det ikke fungerer i sublime på mac*/
@@ -85,7 +126,6 @@ img { /*Alle bilder har 10% radius*/
 .textbox {
     flex: 3; 
     padding: 20px;
-    font-family: Roboto, sans-serif;
 }
 
 .text-img {
@@ -207,7 +247,7 @@ hr.footer-line {
     text-align: left;
     font-size: 1rem;
     color: #006357;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-copyright {
