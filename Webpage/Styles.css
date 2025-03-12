@@ -12,6 +12,7 @@
     --gcbrown:#BC7D4C;
     --gcgreen:#A3D079;
     --gctext: #0C151B;
+    --gcback2: rgba(255, 248, 243, 0.7);
 }
 
 /*Krav til tekst
@@ -61,9 +62,30 @@ img { /*Alle bilder har 10% radius*/
     border-radius: 10%;
 }
 
+.title-box h1 {
+    opacity: 100%;
+}
+
 .title-box {
     background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
+    height: 20rem;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: 100% 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.title-box div {
+    text-align: center;
+    padding: 6rem;
+    width: 60%;
+    background-color: var(--gcback2);
+    border-radius: 10%;
+}
+
+
 
 .infoimage {
     width: 100%;
