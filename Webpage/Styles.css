@@ -62,7 +62,6 @@ overskrift 2 (H3) - bold - putfit - 32 punkt
     }
 
 
-
 img { /*Alle bilder har 10% radius*/
     border-radius: 10%;
 }
@@ -71,7 +70,7 @@ img { /*Alle bilder har 10% radius*/
     opacity: 100%;
 }
 
-.title-box {
+.title-box { /*Tittel om siden emd bildebakgrunn */
     background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
     height: 20rem;
     background-repeat: no-repeat;
@@ -133,31 +132,10 @@ img { /*Alle bilder har 10% radius*/
     font-weight: 200;
 }
 
-.Header-box {
-    background-image: ;
-}
-
-.inf-image {
-    width: 100%;
-}
-
-.text-img {
-    flex: 1;
-    padding: 1rem;
-}
-
 .profile-img {
-    width: 60%;
-    height: 60%;
-    border-radius: 100%;
-    float: right;
-}
-
-.profile-img2 {
     width: 85%;
     height: 85%;
     border-radius: 100%;
-    float: left;
 }
 
 .avatar {
@@ -187,13 +165,26 @@ img { /*Alle bilder har 10% radius*/
     margin: auto;
 }
 
+.inf-image {
+    width: 100%;
+}
+
+.text-img {
+    flex: 1;
+    padding: 1rem;
+}
+
 .Textbox-container {
     display: flex;
     align-items: center;
     justify-content: center; /* Juster etter behov */
     gap: 2rem; 
-    margin-left: 96px;
-    margin-right: 96px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.profile-container {
+    background-color: var(--gcback);
 }
 
 .Textbox-container2 {
@@ -201,29 +192,21 @@ img { /*Alle bilder har 10% radius*/
     align-items: center;
     justify-content: center; /* Juster etter behov */
     gap: 2rem; 
-    background-color: var(--gcback);
+    margin-left: 6rem;
+    margin-right: 6rem;
+
 }
 
 .textbox {
     flex: 3; 
     padding: 2rem;
     max-width: 65ch;
-    margin-left: 96px;
-    margin-right: 96px;
 }
 
 .textbox i:hover {
     color: var(--gcbrown);
     transition: 0.1s;
 }
-
-div.contact-container {
-    background: var(--graaboindu);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 20% 5% 20%;
-  }
     
 /* Kode for footer er hentet fra figma og endret, her skal det endres en del slik at det blir lettere å lese koden. Figma lager mye ekstra unødvendig kode */
 .about-us a, .visit-our-github a {
