@@ -339,3 +339,109 @@ hr.footer-line {
 	color: black;
 }
 
+/*CSS
+ABOUT GREEN PROGRAMMING
+*/
+
+
+.prog-textbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.prog-textbox {
+    padding: 2rem;
+    max-width: 100%;
+    padding: 2rem;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+/* Navigasjon*/
+
+.prog-navigasjon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+.prog-navigasjon-knapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.prog-navigasjon-knapper button {
+    padding: 1rem 2rem;
+    background-color: var(--gcgreen);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prog-navigasjon-knapper button:hover {
+    background-color: var(--gcdark);
+    transform: scale(1.05);
+}
+
+
+/* Artikkel setup */
+
+
+.prog-article-container {
+    max-width: 100%;
+    padding: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.prog-article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.prog-article-card {
+    flex: 1 1 0;
+    min-width: 240px;
+    padding: 24px;
+    background: #F2FAF4;
+    border-radius: 8px;
+    outline: 1px solid #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.prog-article-card:hover {
+    transform: scale(1.05);
+}
+
+.prog-article-text-header {
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--gctext);
+    margin-bottom: 16px;
+}
+
+.prog-article-text {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--gctext);
+}
+
