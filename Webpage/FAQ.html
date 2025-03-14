@@ -10,6 +10,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='main.js'></script>
+    <style>
+        .overskrift {
+            text-align:center;
+        }
+        
+        .olivenBG {
+            background-color: #F2FAF4;
+        }
+
+        .q-n-a hr {
+            width: 50%;
+            height: 4px;
+            background-color: black;
+            border: 0px;
+            margin: auto;
+            border-radius: 2px;            
+        }
+
+        .buttonLine{
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .buttonQNA{
+            width: 30%;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 30px;
+            background-color: #006357;
+            text-align: center;
+            display: block;
+            flex: 0 1 40%; /* Default */
+        }
+
+        .buttonQNA:hover{
+            background-color: #98DCC3;
+            color: black;
+        }
+
+    </style>
+
 </head>
 <body>
     <div class="stick-to-top"> <!--Div for å få header til å sitte fast på toppen -->
@@ -31,6 +73,56 @@
 
     <main>
         <!--Hovedinnhold på siden her -->
+        <div class="textbox">
+            <div class="overskrift">
+                <h1 style =>Questions & Answers</h1>
+            </div>
+            <br>
+            <p>Here you can browse questions and find answers written by professionals. The search box and category buttons can help you find the info you are looking for. If you still have questions we are happy to answer your requests through the Contact Us page. </p>
+            <br>
+        </div>
+        
+        <!--Knapper som burde vært dropdown-->
+        <div class = "buttonLine">
+            <div class = "buttonQNA"><h2>Category</h2></div>
+            <div class = "buttonBuffer"></div>
+            <div class = "buttonQNA"><h2>Level</h2></div>
+        </div>
+        
+        <br>
+        <br>
+
+        <div class="q-n-a">
+            <div class="olivenBG textbox">
+                <h2>Question</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br>
+                <hr>
+                <br>
+                <h2>Answer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="textbox">
+                <h2>Question</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br>
+                <hr>
+                <br>
+                <h2>Answer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="olivenBG textbox">
+                <h2>Question</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br>
+                <hr>
+                <br>
+                <h2>Answer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
