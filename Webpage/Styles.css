@@ -2,6 +2,11 @@
 	font-family: Arial, helvetica, sans-serif;
 	margin: 0;
 	padding: 0px;
+    line-height: 140%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root { /* Farger til nettsiden */
@@ -12,7 +17,15 @@
     --gcbrown:#BC7D4C;
     --gcgreen:#A3D079;
     --gctext: #0C151B;
+    --gcback2: rgba(255, 248, 243, 0.7);
 }
+
+/*Krav til tekst
+brødtekst - regular - roboto - 16 punkt
+Tittel (H1) - bold - outfit - 64 punkt
+Overskrift 1 (H2) - bold - outfit 48 punkt
+overskrift 2 (H3) - bold - putfit - 32 punkt
+*/
 
 .stick-to-top { /* Menyen sitter fast på toppen */
 	position: sticky;
@@ -20,7 +33,59 @@
 	z-index: 1;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    font-family: 'Outfit';
+    font-family: 'Inter';
+    }
+    p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    }
+    
+    h1 { 
+        font-size: 4em;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-size: 3em;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-family: 'Outfit', sans-serif; 
+        font-weight: 300;
+    }
+
+
 img { /*Alle bilder har 10% radius*/
+    border-radius: 10%;
+}
+
+.title-box h1 {
+    opacity: 100%;
+}
+
+.title-box { /*Tittel om siden emd bildebakgrunn */
+    background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
+    height: 20rem;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: 100% 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box div {
+    text-align: center;
+    padding: 6rem;
+    width: 60%;
+    background-color: var(--gcback2);
     border-radius: 10%;
 }
 
@@ -55,41 +120,93 @@ img { /*Alle bilder har 10% radius*/
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-family: Inter;
 }
   
 .navbar li a:hover { /* Meny-liste - hentet inspo og hjelp fra W3school. hovereffekt  */
     color: var(--gcback);
 }
 
+.navbar ul li a {
+    font-size: 1.5rem;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 200;
+}
+
+.profile-img {
+    width: 85%;
+    height: 85%;
+    border-radius: 100%;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 50%;
+    padding: 1rem;
+}
+.avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.avatar-box{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    text-align: center;
+}
+
+.avatar-line {
+    border: 1px solid var(--gcbrown);
+    border-radius: 5px;
+    width: 51.75rem;
+    margin: auto;
+}
+
+.inf-image {
+    width: 100%;
+}
+
+.text-img {
+    flex: 1;
+    padding: 1rem;
+}
 
 .Textbox-container {
     display: flex;
     align-items: center;
     justify-content: center; /* Juster etter behov */
     gap: 2rem; 
-    padding: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.profile-container {
+    background-color: var(--gcback);
+}
+
+.Textbox-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Juster etter behov */
+    gap: 2rem; 
+    margin-left: 6rem;
+    margin-right: 6rem;
+
 }
 
 .textbox {
     flex: 3; 
-    padding: 20px;
-    font-family: Roboto, sans-serif;
+    padding: 2rem;
+    max-width: 65ch;
 }
 
-.text-img {
-    flex: 1;
-    padding: 4rem;
+.textbox i:hover {
+    color: var(--gcbrown);
+    transition: 0.1s;
 }
-
-div.contact-container {
-    background: var(--graaboindu);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 20% 5% 20%;
-  }
     
 /* Kode for footer er hentet fra figma og endret, her skal det endres en del slik at det blir lettere å lese koden. Figma lager mye ekstra unødvendig kode */
 .about-us a, .visit-our-github a {
@@ -125,10 +242,6 @@ i:hover {
 i.fa {
     font-size: 3rem;
     padding-right: 1rem;
-}
-
-.fa :hover {
-    color: var(--gcback);
 }
 
 .github-box {
@@ -197,7 +310,7 @@ hr.footer-line {
     text-align: left;
     font-size: 1rem;
     color: #006357;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer-copyright {
@@ -207,5 +320,111 @@ hr.footer-line {
 	padding-top: 1rem;
     padding-bottom: 1rem;
 	color: black;
+}
+
+/*CSS
+ABOUT GREEN PROGRAMMING
+*/
+
+
+.prog-textbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.prog-textbox {
+    padding: 2rem;
+    max-width: 100%;
+    padding: 2rem;
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+/* Navigasjon*/
+
+.prog-navigasjon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+}
+.prog-navigasjon-knapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.prog-navigasjon-knapper button {
+    padding: 1rem 2rem;
+    background-color: var(--gcgreen);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prog-navigasjon-knapper button:hover {
+    background-color: var(--gcdark);
+    transform: scale(1.05);
+}
+
+
+/* Artikkel setup */
+
+
+.prog-article-container {
+    max-width: 100%;
+    padding: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.prog-article-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.prog-article-card {
+    flex: 1 1 0;
+    min-width: 240px;
+    padding: 24px;
+    background: #F2FAF4;
+    border-radius: 8px;
+    outline: 1px solid #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.prog-article-card:hover {
+    transform: scale(1.05);
+}
+
+.prog-article-text-header {
+    font-size: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--gctext);
+    margin-bottom: 16px;
+}
+
+.prog-article-text {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--gctext);
 }
 
