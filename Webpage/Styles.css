@@ -206,17 +206,17 @@ img { /*Alle bilder har 10% radius*/
 }
 
 /* Kode for footer er hentet fra figma og endret, her skal det endres en del slik at det blir lettere å lese koden. Figma lager mye ekstra unødvendig kode */
-.about-us a, .visit-our-github a {
+.lenke a, .visit-our-github a {
 	text-decoration: none;
 	color: var(--gcdark);
 }
 
-.about-us a:hover, .visit-our-github a:hover {
+.lenke a:hover, .visit-our-github a:hover {
     color: var(--gcback);
     transition: 0.1s;
 }
 
-i:hover {
+.footer-container i:hover {
     color: var(--gcback);
     transition: 0.1s;
 }
@@ -229,12 +229,12 @@ i:hover {
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
+    padding-left: 8rem;
 }
 
 .fa-github {
     color: var(--gcdark);
 }
-
 
 i.fa {
     font-size: 3rem;
@@ -250,14 +250,14 @@ i.fa {
     gap: 0.125rem;
 }
 
-
 hr.footer-line {
     border: 0.1rem solid var(--gcback);
     border-radius: 5px;
     width: 51.75rem;
+    margin-left: 8rem;
 }
 
-.about-us {
+.lenke {
     align-self: stretch;
     position: relative;
     line-height: 2rem;
@@ -278,35 +278,34 @@ hr.footer-line {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    
+    justify-content: flex-start; 
 }
+
 .liste-box-parent {
     width: 51.75rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 14.562rem;
+    gap: 14rem;
     padding-bottom: 1rem;
+    padding-left: 8rem;
 }
 
 .footer-container {
     width: 100%;
-    left: 0;
-    bottom: 0;
     padding-top: 1rem;
-    background-color: #98dcc3;
+    background-color: var(--gcligth);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     box-sizing: border-box;
     gap: 1rem;
     text-align: left;
     font-size: 1rem;
-    color: #006357;
+    color: var(--gcdark);
     font-family: 'Roboto', sans-serif;
 }
 
