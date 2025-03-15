@@ -1,3 +1,6 @@
+/* CSS
+    KRAV TIL SIDEN 
+*/
 * {
 	font-family: Arial, helvetica, sans-serif;
 	margin: 0;
@@ -18,12 +21,6 @@ html {
     --gcgreen:#A3D079; /* Grønn til knapper og viuell pynt og effekter */
     --gctext: #0C151B; /* Tekstfarge */
     --gcback2: rgba(255, 248, 243, 0.7); /* delvis transaprent bakgrunn til tittelboks */
-}
-
-.stick-to-top { /* Menyen sitter fast på toppen */
-	position: sticky;
-	top: 0;
-	z-index: 1;
 }
 
 @font-face {
@@ -59,23 +56,14 @@ img { /*Alle bilder har 10% radius*/
     border-radius: 10%;
 }
 
-.title-box { /*Tittel om siden emd bildebakgrunn */
-    background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
-    height: 20rem;
-    background-repeat: no-repeat;
-	background-size: cover;
-    background-position: 100% 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* CSS
+    KODE TIL HEADER - NAVIGASJON
+*/
 
-.title-box div {
-    text-align: center;
-    padding: 6rem;
-    width: 60%;
-    background-color: var(--gcback2);
-    border-radius: 10%;
+.stick-to-top { /* Menyen sitter fast på toppen */
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .logo-icon { /* Kode for logo og at den holder seg til venstre. (Kode fra figma) pluss litt justeringer med padding og margin */
@@ -111,22 +99,69 @@ img { /*Alle bilder har 10% radius*/
     text-decoration: none;
 }
   
-.navbar li a:hover { /* Meny-liste - hentet inspo og hjelp fra W3school. hovereffekt  */
+.navbar li a:hover { /* Meny-liste - hentet inspo og hjelp fra W3school  */
     color: var(--gcback);
 }
 
-.navbar ul li a {
+.navbar ul li a { /*tekst på anvbar*/
     font-size: 1.5rem;
     font-family: 'Roboto' , sans-serif;
     font-weight: 200;
 }
 
-.profile-img {
-    width: 85%;
-    height: 85%;
-    border-radius: 100%;
+/* CSS
+    KODE til TITTELBOKS TIL ALLE SIDER  - Overksrift til sidene 
+*/
+
+.title-box { /*Tittel om siden emd bildebakgrunn */
+    background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
+    height: 20rem;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-position: 100% 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.title-box div {
+    text-align: center;
+    padding: 6rem;
+    width: 60%;
+    background-color: var(--gcback2);
+    border-radius: 10%;
+}
+
+/*CSS
+    ABOUT US
+*/
+
+/* Generell tekstboks */
+.inf-image {
+    width: 100%;
+}
+
+.text-img {
+    flex: 1;
+    padding: 1rem;
+}
+
+.Textbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.textbox {
+    flex: 3; 
+    padding: 2rem;
+    max-width: 65ch;
+}
+
+/* Hyperlenker via avatar til team-informasjon*/
 .avatar {
     border-radius: 100%;
     width: 50%;
@@ -154,49 +189,22 @@ img { /*Alle bilder har 10% radius*/
     margin: auto;
 }
 
-.inf-image {
-    width: 100%;
-}
-
-.text-img {
-    flex: 1;
-    padding: 1rem;
-}
-
-.Textbox-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Juster etter behov */
-    gap: 2rem; 
-    margin-left: 6rem;
-    margin-right: 6rem;
+/* Info pr. team-medlemn*/ 
+.profile-img {
+    width: 85%;
+    height: 85%;
+    border-radius: 100%;
 }
 
 .profile-container {
     background-color: var(--gcback);
 }
-
-.Textbox-container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Juster etter behov */
-    gap: 2rem; 
-    margin-left: 6rem;
-    margin-right: 6rem;
-
-}
-
-.textbox {
-    flex: 3; 
-    padding: 2rem;
-    max-width: 65ch;
-}
-
-.textbox i:hover {
+    
+.textbox i:hover { /*hover effekt på github ikon */ 
     color: var(--gcbrown);
     transition: 0.1s;
 }
-    
+
 /* Kode for footer er hentet fra figma og endret, her skal det endres en del slik at det blir lettere å lese koden. Figma lager mye ekstra unødvendig kode */
 .about-us a, .visit-our-github a {
 	text-decoration: none;
