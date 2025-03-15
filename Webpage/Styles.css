@@ -59,10 +59,6 @@ img { /*Alle bilder har 10% radius*/
     border-radius: 10%;
 }
 
-.title-box h1 {
-    opacity: 100%;
-}
-
 .title-box { /*Tittel om siden emd bildebakgrunn */
     background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
     height: 20rem;
