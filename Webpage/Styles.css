@@ -10,22 +10,15 @@ html {
 }
 
 :root { /* Farger til nettsiden */
-	--gcback: #F2FAF4;
-	--white: #FFFFFF;
-	--gcligth: #98DCC3;
-    --gcdark:#006357;
-    --gcbrown:#BC7D4C;
-    --gcgreen:#A3D079;
-    --gctext: #0C151B;
-    --gcback2: rgba(255, 248, 243, 0.7);
+	--gcback: #F2FAF4; /* Bakgrunnfarge til enten siden eller bak ulike bokser for å stikke frem */
+	--white: #FFFFFF; /* plain hvit farge */
+	--gcligth: #98DCC3; /* Lys Grønn til knapepr og visuell pynt og effekter. header og footer */
+    --gcdark:#006357;  /*Mørk Grønn til tekst, knapper og visuell punt og effekt */
+    --gcbrown:#BC7D4C; /* Grønn til knapper og viuell pynt og effekter */
+    --gcgreen:#A3D079; /* Grønn til knapper og viuell pynt og effekter */
+    --gctext: #0C151B; /* Tekstfarge */
+    --gcback2: rgba(255, 248, 243, 0.7); /* delvis transaprent bakgrunn til tittelboks */
 }
-
-/*Krav til tekst
-brødtekst - regular - roboto - 16 punkt
-Tittel (H1) - bold - outfit - 64 punkt
-Overskrift 1 (H2) - bold - outfit 48 punkt
-overskrift 2 (H3) - bold - putfit - 32 punkt
-*/
 
 .stick-to-top { /* Menyen sitter fast på toppen */
 	position: sticky;
@@ -38,24 +31,24 @@ overskrift 2 (H3) - bold - putfit - 32 punkt
     font-family: 'Outfit';
     font-family: 'Inter';
     }
-    p {
+    p { /*Brødtekst - artikkeltekst*/
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     }
     
-    h1 { 
+    h1 { /* Tittel til sidene*/
         font-size: 4em;
         font-family: 'Outfit', sans-serif;
         font-weight: 400;
     }
     
-    h2 {
+    h2 { /* overskrift 1 */
         font-size: 3em;
         font-family: 'Outfit', sans-serif;
         font-weight: 300;
     }
 
-    h3 {
+    h3 { /*Overksrift 2*/
         font-size: 2em;
         font-family: 'Outfit', sans-serif; 
         font-weight: 300;
