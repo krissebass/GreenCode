@@ -115,7 +115,7 @@ img { /*Alle bilder har 10% radius*/
 
 .title-box { /*Tittel om siden emd bildebakgrunn */
     background-image: url(Images/bærekraftig-utvikling-bakc.jpg);
-    height: 20rem;
+    height: 16rem;
     background-repeat: no-repeat;
 	background-size: cover;
     background-position: 100% 80%;
@@ -126,7 +126,7 @@ img { /*Alle bilder har 10% radius*/
 
 .title-box div {
     text-align: center;
-    padding: 6rem;
+    padding: 4rem;
     width: 60%;
     background-color: var(--gcback2);
     border-radius: 10%;
