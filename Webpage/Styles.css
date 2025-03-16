@@ -196,7 +196,7 @@ img { /*Alle bilder har 10% radius*/
     border-radius: 100%;
 }
 
-.profile-container {
+#Sofie, #Eskild, #Hataw {
     background-color: var(--gcback);
 }
     
