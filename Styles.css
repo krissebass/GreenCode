@@ -126,15 +126,6 @@ img { /*Alle bilder har 10% radius*/
         text-align: center;
         text-decoration: none;
     }
-
-    .Textbox-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem; 
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
   }
 
 /* CSS
