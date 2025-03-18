@@ -118,7 +118,6 @@ img { /*Alle bilder har 10% radius*/
 
     .navbar li { /* Meny-liste */
         float: right;
-        height: 4rem;
     }
 
     .navbar li a { /* Meny-liste - hentet inspo og hjelp fra W3school. Linkene som skal trykkes på*/
