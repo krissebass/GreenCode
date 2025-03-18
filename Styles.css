@@ -117,7 +117,7 @@ img { /*Alle bilder har 10% radius*/
     }
 
     .navbar li { /* Meny-liste */
-        float: right;
+        float: left;
     }
 
     .navbar li a { /* Meny-liste - hentet inspo og hjelp fra W3school. Linkene som skal trykkes på*/
@@ -125,6 +125,15 @@ img { /*Alle bilder har 10% radius*/
         color: var(--gcdark);
         text-align: center;
         text-decoration: none;
+    }
+
+    .Textbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem; 
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
   }
 
