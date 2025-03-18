@@ -27,6 +27,7 @@ html {
     font-family: 'Roboto';
     font-family: 'Outfit';
     font-family: 'Inter';
+    src: ;
     }
     p { /*Brødtekst - artikkeltekst*/
     font-family: 'Roboto', sans-serif;
@@ -113,6 +114,18 @@ img { /*Alle bilder har 10% radius*/
         font-size: 1rem;
         font-family: 'Roboto' , sans-serif;
         font-weight: 200;
+    }
+
+    .navbar li { /* Meny-liste */
+        float: right;
+        height: 4rem;
+    }
+
+    .navbar li a { /* Meny-liste - hentet inspo og hjelp fra W3school. Linkene som skal trykkes på*/
+        display: block;
+        color: var(--gcdark);
+        text-align: center;
+        text-decoration: none;
     }
   }
 
