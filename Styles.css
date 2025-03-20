@@ -653,3 +653,59 @@ ABOUT GREEN PROGRAMMING
     gap: 8px;
 }
 
+/*Case Study, Edvard*/
+
+.cs-intro {
+    width: 60%;
+    margin: auto;
+}
+
+.imgContainer {
+    max-height: 36vh;
+    max-width: 36vW;
+}
+
+/*Case Study end*/
+
+/*QNA, Edvard*/
+
+.qna h2{
+    color: var(--gcdark)
+}
+
+.qna hr {
+    width: 60%;
+    height: 4px;
+    background-color: black;
+    border: 0px;
+    margin: auto;
+    border-radius: 2px;
+}
+
+.buttonLine{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonQNA{
+    width: 30%;
+    height: 80px;
+    line-height: 40px;
+    border-radius: 40px;
+    background-color: #006357;
+    text-align: center;
+    display: block;
+    flex: 0 1 40%; /* Default */
+}
+
+.buttonQNA:hover{
+    background-color: #98DCC3;
+    color: black;
+}
+
+.qnaEvenNumbers {
+    background-color: #FFFFFF;
+}
+
+/*QNA End*/
