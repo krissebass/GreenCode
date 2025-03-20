@@ -445,116 +445,124 @@ ABOUT GREEN PROGRAMMING
     color: var(--gctext);
 }
 
-/* index/forsiden css */
+    /* index/forsiden css */
+    /* body og titlebox */
 
-.title-boxindex {
-    background-image: url(Images/AI-firefly-adobe-laptop-blader.jpg);
-    height: 40rem;
-    background-repeat: no-repeat;
-	background-size: cover;
-    background-position: 100% 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 5%;
-}
+    .title-boxindex {
+        background-image: url(Images/AI-firefly-adobe-laptop-blader.jpg);
+        height: 34rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 64px 96px;
+    }
 
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--gcback);
+        color: var(--gctext);
+    }
 
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    .title-boxindex-content h1 {
+        font-size: 3em;
+        font-family: 'Outfit', sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-/* For hoveddelen */
+    .title-boxindex-content p {
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
 
-.title-boxindex-content h1 {
-    font-size: 3em;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
+    .knapp {
+        background-color: var(--gcdark);
+        color: var(--white);
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        padding: 1rem 2rem;
+        font-size: 1.2em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.3s, background-color 0.3s;
+        font-weight: 300;
+    }
 
-.title-boxindex-content p {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
+    .knapp:hover {
+        background-color: var(--gcgreen);
+        transform: scale(1.05);
+    }
 
-.knapp {
-    background-color: #006357;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
+    /* For undertittel og bokser */
+    .content {
+        text-align: center;
+        padding: 64px 96px;
+    }
 
-.knapp:hover {
-    background-color: #4CAF50;
-}
+    .content h2 {
+        font-size: 2em;
+        font-weight: bold;
+        font-family: 'Outfit', sans-serif;
+        margin-bottom: 30px;
+    }
 
-/* For undertittel og bokser */
-.content {
-    text-align: center;
-    padding: 50px 20px;
-}
+    .content-boxes {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        max-width: 800px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
 
-.content h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-}
+    .boks-link {
+        text-decoration: none;
+    }
 
-.content-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
+    .boks {
+        flex: 1;
+        min-width: 220px;
+        max-width: 250px;
+        background: var(--white);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-.boks-link {
-    text-decoration: none;
-}
+    .boks img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 15px;
+    }
 
-.boks {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+    .boks h3 {
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+        color: var(--gctext);
+    }
 
-.boks img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 15px;
-}
+    .boks p {
+        font-size: 1em;
+        font-family: 'Roboto', sans-serif;
+        color: var(--gctext);
+    }
 
-.boks h3 {
-    margin: 10px 0;
-    color: #333;
-}
-
-.boks p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.boks:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+    .boks:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
 
 /* CSS for Contact Us! */
 
@@ -576,7 +584,7 @@ body {
 
 .contact-form {
     flex: 1;
-    min-width: 300px;
+    min-width: 301px;
     max-width: 45%;
 }
 
