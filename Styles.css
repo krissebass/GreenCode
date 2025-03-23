@@ -728,3 +728,152 @@ ABOUT GREEN PROGRAMMING
 }
 
 /*QNA End*/
+
+/* Toolkit Start */
+.Textbox-container-toolkit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem; 
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.textbox-toolkit {
+    flex: 3; 
+    padding: 3rem;
+    max-width: 65ch;
+	align-items: center;
+}
+
+.hr-toolkit {
+    border: 1px solid var(--gcbrown);
+    border-radius: 5px;
+    width: 51.75rem;
+    margin: auto;
+}
+
+.p-toolkit {
+    width: 51.75rem;
+    margin: auto;
+	text-align: center;
+}
+
+.h1-toolkit {
+    width: 51.75rem;
+    margin: auto;
+	text-align: center;
+}
+
+.h2-toolkit {
+    width: 51.75rem;
+    margin: auto;
+	text-align: center;
+}
+
+.h3-toolkit {
+    width: 51.75rem;
+    margin: auto;
+	text-align: center;
+}
+
+
+.p-toolkit-intro {
+    margin: 5px 0;
+	text-align: center;
+	padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+tools-toolkit h2 {
+    margin: 10px 0;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+tools-toolkit p {
+    margin: 10px 0;
+	text-align: center;
+	padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+tools-toolkit img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+frameworks-toolkit h2 {
+    margin: 10px 0;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+frameworks-toolkit p {
+    margin: 10px 0;
+	text-align: center;
+	padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+frameworks-toolkit img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+checklist-toolkit h2, h3 {
+    margin: 10px 0;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+checklist-toolkit p {
+	margin: 5px 0;
+	text-align: center;
+	padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+sources-toolkit p, h2 {
+	margin: 1px 0;
+	text-align: center;
+	padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+.Textbox-container-toolkit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.textbox-toolkit {
+    flex: 3; 
+    padding: 2rem;
+    max-width: 65ch;
+}
+
+.toolkit-container {
+    display: grid;
+    grid-template-columns: auto auto auto; /* auto sånn at alle kolonnene har samme bredde */
+    gap: 20px;
+}
