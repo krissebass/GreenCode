@@ -287,7 +287,6 @@ hr.footer-line {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    list-style-type: none;
 }
 
 .liste-box ul {
