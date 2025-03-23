@@ -721,3 +721,42 @@ ABOUT GREEN PROGRAMMING
 }
 
 /*QNA End*/
+
+/* Toolkit Start */
+.hr-toolkit {
+    border: 1px solid var(--gcbrown);
+    border-radius: 5px;
+    width: 51.75rem;
+    margin: auto;
+}
+
+section.toolkit h2 {
+	margin: 10px 0;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section.toolkit h3 {
+	margin: 10px 0;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section.toolkit p {
+	margin: 10px 0;
+	text-align: center;
+	padding: 1rem;
+    display: flex;
+    flex-direction: column;
+	padding-bottom: 1rem;
+}
+
+section.toolkit img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+/* Toolkit Slutt */
