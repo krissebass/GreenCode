@@ -188,6 +188,12 @@ img { /*Alle bilder har 10% radius*/
     width: 50%;
     padding: 1rem;
 }
+
+.avatar:hover {
+    transform: scale(1.1); /*forstørre bilde ved hover*/
+    transition: .1s;
+}
+
 .avatar-container {
     display: flex;
     align-items: center;
@@ -250,7 +256,7 @@ img { /*Alle bilder har 10% radius*/
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
-    padding-left: 8rem;
+    margin: auto;
 }
 
 .fa-github {
@@ -275,7 +281,7 @@ hr.footer-line {
     border: 0.1rem solid var(--gcback);
     border-radius: 5px;
     width: 51.75rem;
-    margin-left: 8rem;
+    margin: auto;
 }
 
 .lenke {
@@ -283,7 +289,7 @@ hr.footer-line {
     position: relative;
     line-height: 2rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     height: 2.688rem;
     flex-shrink: 0;
 }
@@ -292,14 +298,14 @@ hr.footer-line {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .liste-box1 {
     width: 24.938rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: center; 
 }
 
 .liste-box-parent {
@@ -320,11 +326,11 @@ hr.footer-line {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     box-sizing: border-box;
     gap: 1rem;
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     color: var(--gcdark);
     font-family: 'Roboto', sans-serif;
