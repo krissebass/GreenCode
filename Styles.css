@@ -186,7 +186,6 @@ img { /*Alle bilder har 10% radius*/
 .avatar {
     border-radius: 100%;
     width: 50%;
-    padding: 1rem;
 }
 
 .avatar:hover {
@@ -198,14 +197,14 @@ img { /*Alle bilder har 10% radius*/
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem; 
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 .avatar-box{
     display: block;
     align-items: center;
     justify-content: center;
-    gap: 2rem; 
     text-align: center;
 }
 
@@ -233,12 +232,12 @@ img { /*Alle bilder har 10% radius*/
 }
 
 /* Kode for footer er hentet fra figma og endret, her skal det endres en del slik at det blir lettere å lese koden. Figma lager mye ekstra unødvendig kode */
-.lenke a, .visit-our-github a {
+.liste-box a, .visit-our-github a {
 	text-decoration: none;
 	color: var(--gcdark);
 }
 
-.lenke a:hover, .visit-our-github a:hover {
+.liste-box a:hover, .visit-our-github a:hover {
     color: var(--gcback);
     transition: 0.1s;
 }
@@ -284,44 +283,33 @@ hr.footer-line {
     margin: auto;
 }
 
-.lenke {
-    align-self: stretch;
-    position: relative;
-    line-height: 2rem;
-    display: flex;
-    align-items: center;
-    height: 2.688rem;
-    flex-shrink: 0;
-}
 .liste-box {
-    width: 12.063rem;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
 }
-.liste-box1 {
-    width: 24.938rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+
+.liste-box ul {
+    list-style-type: none;
+}
+
+.liste-box li {
+    margin: 1rem;
 }
 
 .liste-box-parent {
-    width: 51.75rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 14rem;
     padding-bottom: 1rem;
-    padding-left: 8rem;
 }
 
 .footer-container {
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 2rem;
     background-color: var(--gcligth);
     overflow: hidden;
     display: flex;
