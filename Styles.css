@@ -191,6 +191,7 @@ img { /*Alle bilder har 10% radius*/
 .avatar:hover {
     transform: scale(1.1); /*forstørre bilde ved hover*/
     transition: .1s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .avatar-container {
