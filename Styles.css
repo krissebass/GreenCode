@@ -464,10 +464,11 @@ ABOUT GREEN PROGRAMMING
         padding: 64px 96px;
     }
 
-    body {
+    .front-page {
         margin: 0;
         padding: 0;
         color: var(--gctext);
+        background-color: var(--gcback);
     }
 
     .title-boxindex-content h1 {
