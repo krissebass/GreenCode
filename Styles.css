@@ -25,33 +25,50 @@ html {
 
 @font-face {
     font-family: 'Roboto';
-    font-family: 'Outfit';
-    font-family: 'Inter';
-    src: ;
-    }
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+         url('/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    p { /*Brødtekst - artikkeltekst*/
+@font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit-Regular.woff2') format('woff2'),
+         url('/fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+         url('/fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p { /*Brødtekst - artikkeltekst*/
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    }
+}
     
-    h1 { /* Tittel til sidene*/
+h1 { /* Tittel til sidene*/
         font-size: 4em;
         font-family: 'Outfit', sans-serif;
         font-weight: 400;
-    }
+}
     
-    h2 { /* overskrift 1 */
+h2 { /* overskrift 1 */
         font-size: 3em;
         font-family: 'Outfit', sans-serif;
         font-weight: 300;
-    }
+}
 
-    h3 { /*Overksrift 2*/
+h3 { /*Overksrift 2*/
         font-size: 2em;
         font-family: 'Outfit', sans-serif; 
         font-weight: 300;
-    }
+}
 
 
 img { /*Alle bilder har 10% radius*/
@@ -78,7 +95,7 @@ img { /*Alle bilder har 10% radius*/
     padding-bottom: 0.5rem;
 }
 
-.navbar ul { /* Meny-liste - hentet inspo og hjelp fra W3school */
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -86,21 +103,20 @@ img { /*Alle bilder har 10% radius*/
     background-color: var(--gcligth);
 }
   
-.navbar li { /* Meny-liste - hentet inspo og hjelp fra W3school.  Menyen skal ligge  til høyre*/
+.navbar  li { /* Meny-liste - hentet inspo og hjelp fra W3school  */
     float: right;
     padding: 1rem;
-    height: 4rem;
+    height: 3rem;
 }
-  
-.navbar li a { /* Meny-liste - hentet inspo og hjelp fra W3school. Linkene som skal trykkes på*/
-    display: block;
-    color: var(--gcdark);
-    text-align: center;
+
+.navbar li a {
+    display: inline-block;
+    color:var(--gcdark);
     padding: 1rem;
     text-decoration: none;
 }
-  
-.navbar li a:hover { /* Meny-liste - hentet inspo og hjelp fra W3school  */
+
+  .navbar li a:hover { 
     color: var(--gcback);
 }
 
@@ -110,26 +126,33 @@ img { /*Alle bilder har 10% radius*/
     font-weight: 200;
 }   
 
-@media screen and (max-width: 600px) {
-    .navbar ul li a { /*tekst på anvbar*/
-        font-size: 1rem;
-        font-family: 'Roboto' , sans-serif;
-        font-weight: 200;
-    }
+a li.dropdown {
+    display: block;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--gcligth);
+    min-width: 160px;
+    border-radius: 10%;
+    z-index: 1;
+}
 
-    .navbar li { /* Meny-liste */
-        float: left;
-    }
+.dropdown-menu a {
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-menu li {
+    float: none;
+}
 
-    .navbar li a { /* Meny-liste - hentet inspo og hjelp fra W3school. Linkene som skal trykkes på*/
-        display: block;
-        color: var(--gcdark);
-        text-align: center;
-        text-decoration: none;
-    }
-  }
-
-
+.dropdown:hover .dropdown-menu { 
+    display:block;
+    color: var(--gcback);
+}
 
 /* CSS
     KODE til TITTELBOKS TIL ALLE SIDER  - Overksrift til sidene 
@@ -272,7 +295,7 @@ img { /*Alle bilder har 10% radius*/
     color: var(--gcdark);
 }
 
-i.fa {
+i.fa-brands {
     font-size: 3rem;
     padding-right: 1rem;
 }
