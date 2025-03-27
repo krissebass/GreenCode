@@ -289,8 +289,7 @@ i.fa {
 hr.footer-line {
     border: 0.1rem solid var(--gcback);
     border-radius: 5px;
-    width: 51.75rem;
-    margin: auto;
+    width: calc(100% - 12rem);
 }
 
 .liste-box {
@@ -308,12 +307,13 @@ hr.footer-line {
 }
 
 .liste-box-parent {
+    width: calc(100% - 12rem);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 14rem;
+    justify-content: space-evenly;
     padding-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .footer-container {
