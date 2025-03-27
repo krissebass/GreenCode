@@ -133,7 +133,6 @@ a li.dropdown {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: var(--gcligth);
     min-width: 160px;
     border-radius: 10%;
     z-index: 1;
@@ -151,7 +150,7 @@ a li.dropdown {
 
 .dropdown:hover .dropdown-menu { 
     display:block;
-    color: var(--gcback);
+    background-color: var(--gcgreen);
 }
 
 /* CSS
