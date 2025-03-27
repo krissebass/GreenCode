@@ -669,14 +669,28 @@ ABOUT GREEN PROGRAMMING
 
 /*Case Study, Edvard*/
 
-.cs-intro {
-    width: 60%;
-    margin: auto;
+.cs-container {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
-.imgContainer {
-    max-height: 36vh;
-    max-width: 36vW;
+.cs-textbox {
+    max-width: 50%;
+    flex: 1;
+}
+
+.cs-intro {
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.csImgContainer {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -689,12 +703,19 @@ ABOUT GREEN PROGRAMMING
 }
 
 .qna hr {
+    /*
     width: 60%;
     height: 4px;
     background-color: black;
     border: 0px;
     margin: auto;
     border-radius: 2px;
+    */
+
+    border: 1px solid var(--gcbrown);
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
 }
 
 .buttonLine{
