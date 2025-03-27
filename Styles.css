@@ -698,6 +698,15 @@ ABOUT GREEN PROGRAMMING
 
 /*QNA, Edvard*/
 
+.qna-container {
+    display:flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
 .qna h2{
     color: var(--gcdark)
 }
@@ -714,7 +723,7 @@ ABOUT GREEN PROGRAMMING
 
     border: 1px solid var(--gcbrown);
     border-radius: 5px;
-    width: 50%;
+    width: 51.75rem;
     margin: auto;
 }
 
@@ -725,14 +734,13 @@ ABOUT GREEN PROGRAMMING
 }
 
 .buttonQNA{
-    width: 30%;
     height: 80px;
     line-height: 40px;
     border-radius: 40px;
     background-color: #006357;
     text-align: center;
     display: block;
-    flex: 0 1 40%; /* Default */
+    flex: 0 1 50%; /* Default */
 }
 
 .buttonQNA:hover{
@@ -740,8 +748,40 @@ ABOUT GREEN PROGRAMMING
     color: black;
 }
 
-.qnaEvenNumbers {
-    background-color: #FFFFFF;
+
+/* Kopi av Navigasjon til QNA*/
+
+.qna-navigasjon {
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.qna-navigasjon-knapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.qna-navigasjon-knapper button {
+    padding: 1rem 2rem;
+    background-color: var(--gcgreen);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.qna-navigasjon-knapper button:hover {
+    background-color: var(--gcdark);
+    transform: scale(1.05);
+}
+
+.qna-navigasjon-knapper button:focus {
+    background-color: var(--gcdark);
 }
 
 /*QNA End*/
