@@ -731,41 +731,105 @@ ABOUT GREEN PROGRAMMING
     margin: auto;
 }
 
-section.toolkit h2 {
-	margin: 10px 0;
-	margin-left: 6rem;
-	margin-right: 6rem;
-	text-align: center;
+	/* Toolkit textbox og textbox-container */
+.toolkit-textbox-container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem; 
+    margin-left: 96px;
+    margin-right: 96px;
 }
 
-section.toolkit h3 {
-	margin: 10px 0;
-	margin-top: 2rem;
-	margin-left: 6rem;
-	margin-right: 6rem;
-	text-align: center;
-    display: flex;
-    flex-direction: column;
+.toolkit-textbox {
+    max-width: 100%;
+    padding: 2rem;
+    margin-left: 96px;
+    margin-right: 96px;
+	line-height: 1.5;
+    font-size: 1rem;  
 }
 
-section.toolkit p {
-	margin-top: 10px 0;
-	margin-bottom: 5px 0;
-	margin-left: 6rem;
-	margin-right: 6rem;
-	text-align: center;
-	padding: 1rem;
+.framework-textbox-container {
     display: flex;
-    flex-direction: column;
-	padding-bottom: 1rem;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem; 
+    margin-left: 96px;
+    margin-right: 96px;
 }
 
-section.toolkit img {
+.framework-textbox {
+    flex: 3; 
+    padding: 2rem;
+    max-width: 65ch;
+	margin-left: 96px;
+    margin-right: 96px;
+	line-height: 1.5; 
+    font-size: 1rem;  
+}	
+	/* Grids Toolkit */
+.tools-grid-container {
+  display: flex;
+  column-gap: 20px;
+  grid-template-columns: auto auto;
+  padding: 5px;
+  margin-left: 96px;
+  margin-right: 96px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools-grid-container > div {
+  padding: 15px;
+  text-align: left;
+}
+
+.tools-grid-container img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 45%;
+	width: 75%;
 }
-/* Toolkit Slutt */
+
+	/* Checklist Toolkit collapsible - kode lånt fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_symbol */
+.collapsible {
+ background: var(--white);
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.toolkit-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: var(--white);
+      text-align: left;
+}		
+
+/* Toolkit slutt */
