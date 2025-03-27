@@ -160,7 +160,7 @@ img { /*Alle bilder har 10% radius*/
 
 /* Generell tekstboks */
 .inf-image {
-    width: 100%;
+    width: 40vw;
     height: auto;
 }
 
@@ -172,7 +172,7 @@ img { /*Alle bilder har 10% radius*/
 .Textbox-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 1rem; 
     margin-left: 6rem;
     margin-right: 6rem;
@@ -184,6 +184,10 @@ img { /*Alle bilder har 10% radius*/
     max-width: 65ch;
 }
 
+#Sofie, #Eskild, #Hataw {
+    background-color: white;
+}
+
 /* Hyperlenker via avatar til team-informasjon*/
 .avatar {
     border-radius: 100%;
@@ -191,7 +195,7 @@ img { /*Alle bilder har 10% radius*/
 }
 
 .avatar:hover {
-    transform: scale(1.1); /*forstørre bilde ved hover*/
+    transform: scale(1.5); /*forstørre bilde ved hover*/
     transition: .1s;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -199,9 +203,11 @@ img { /*Alle bilder har 10% radius*/
 .avatar-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-left: 6rem;
     margin-right: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .avatar-box{
@@ -209,6 +215,7 @@ img { /*Alle bilder har 10% radius*/
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: var(--gcdark);
 }
 
 .avatar-line {
@@ -220,12 +227,12 @@ img { /*Alle bilder har 10% radius*/
 
 /* Info pr. team-medlemn*/ 
 .profile-img {
-    width: 85%;
+    width: 30vw;
     height: auto;
     border-radius: 100%;
 }
 
-#Sofie, #Eskild, #Hataw {
+#Sofie, #Eskild, #Haa {
     background-color: var(--gcback);
 }
     
@@ -460,7 +467,6 @@ ABOUT GREEN PROGRAMMING
     body {
         margin: 0;
         padding: 0;
-        background-color: var(--gcback);
         color: var(--gctext);
     }
 
