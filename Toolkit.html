@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GreenCode Initiative</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='Styles.css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='main.js'></script>
 </head>
-<body class="front-page">
+<body>
     <div class="stick-to-top"> <!--Div for å få header til å sitte fast på toppen -->
         <header>
             <div class="navbar">
+                <a href="index.html">
+                    <img class="logo-icon" alt="GreenCode Logo" src="Images/GreenCode-logo.png">
+                </a>
                 <ul>
+                    <li><a href="FAQ.html">FAQ</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
                     <li><a href="AboutUs.html">About Us</a></li>
                     <li><a href="Toolkit.html">Toolkit</a></li>
-                    <li><a href="CaseStudy.html">Case Study</a></li>
-                    <li><a href="GreenCoding.html">About Green Programming</a></li>
-                    <a href="index.html">
-                        <img class="logo-icon" alt="GreenCode Logo" src="Images/GreenCode-logo.png">
-                    </a>
+                    <!-- kode for dropdown knap på green porgramming-->
+                    <li class="dropdown">
+                        <a href="GreenCoding.html">Green Programming</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="CaseStudy.html">Case Study</a></li>
+                            <li><a href="Articles.html">Articles</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -299,7 +303,7 @@
             <div class="github-box">
                 <div class="visit-our-github">
                     <a href="https://github.com/krissebass/GreenCode.git" target="_blank">
-                        <i class="fa fa-github"></i>
+                        <i class="fa-brands fa-github"></i>
                     </a>
                     <a href="https://github.com/krissebass/GreenCode.git" target="_blank">Visit our GitHub Repository - GreenCode</a>
                 </div>

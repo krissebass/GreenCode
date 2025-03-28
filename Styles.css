@@ -95,6 +95,15 @@ img { /*Alle bilder har 10% radius*/
     padding-bottom: 0.5rem;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    background-color: var(--gcligth);
+}
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
