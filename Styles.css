@@ -103,7 +103,7 @@ img { /*Alle bilder har 10% radius*/
     background-color: var(--gcligth);
 }
   
-.navbar  li { /* Meny-liste - hentet inspo og hjelp fra W3school  */
+.navbar li { /* Meny-liste - hentet inspo og hjelp fra W3school  */
     float: right;
     padding: 1rem;
     height: 3rem;
@@ -118,6 +118,7 @@ img { /*Alle bilder har 10% radius*/
 
   .navbar li a:hover { 
     color: var(--gcback);
+    transition: 0.1s;
 }
 
 .navbar ul li a { /*tekst på anvbar*/
@@ -150,7 +151,12 @@ a li.dropdown {
 
 .dropdown:hover .dropdown-menu { 
     display:block;
-    background-color: var(--gcgreen);
+    background-color: var(--gcligth);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: .1s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
 }
 
 /* CSS
