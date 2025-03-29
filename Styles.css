@@ -831,12 +831,6 @@ ABOUT GREEN PROGRAMMING
 /*QNA End*/
 
 /* Toolkit Start */
-.hr-toolkit {
-    border: 1px solid var(--gcbrown);
-    border-radius: 5px;
-    width: 51.75rem;
-    margin: auto;
-}
 
 	/* Toolkit textbox og textbox-container */
 .toolkit-textbox-container {
