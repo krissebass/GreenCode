@@ -899,6 +899,49 @@ ABOUT GREEN PROGRAMMING
 	width: 75%;
 }
 
+/* tools-boks. Noen forskjeller fra original .boks-link og .boks, for å få boksene under tools til å ha samme høyde */
+.tools-boks-link {
+    text-decoration: none;
+    display: table;
+    height: 100%;
+}
+
+.tools-boks {
+    flex: 1;
+    min-width: 310px;
+    max-width: 310px;
+    min-height: 300px; 
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: table-cell;
+}
+
+.tools-boks img {
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tools-boks h3 {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--gctext);
+}
+
+.tools-boks p {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    color: var(--gctext);
+}
+
+.tools-boks:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 	/* Checklist Toolkit collapsible - kode lånt fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_symbol */
 .collapsible {
  background: var(--white);
