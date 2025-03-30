@@ -939,15 +939,17 @@ ABOUT GREEN PROGRAMMING
   padding: 18px;
   width: 100%;
   border: none;
+  border-radius: 5px;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .active, .collapsible:hover {
   background-color: #f1f1f1;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
 }
 
 .collapsible:after {
@@ -968,7 +970,11 @@ ABOUT GREEN PROGRAMMING
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: var(--white);
-      text-align: left;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }		
 
 /* Toolkit slutt */
