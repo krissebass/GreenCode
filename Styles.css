@@ -893,12 +893,7 @@ ABOUT GREEN PROGRAMMING
 	width: 75%;
 }
 
-/* tools-boks. Noen forskjeller fra original .boks-link og .boks, for å få boksene under tools til å ha samme høyde */
-.tools-boks-link {
-    text-decoration: none;
-    display: table;
-    height: 100%;
-}
+/* tools-boks. Noen forskjeller fra originale .boks, for å få boksene under tools til å ha samme høyde */
 
 .tools-boks {
     flex: 1;
